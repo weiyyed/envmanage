@@ -1,4 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
     <hr>
+    <form>
+    <p>{{ form.sy }}{{ form.sy.label }}</p>
+    <p>{{ form.restart() }}</p>
+    </form>
 {% endblock %}
