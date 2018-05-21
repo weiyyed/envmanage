@@ -2,7 +2,33 @@
 {% block content %}
     <hr>
     <form>
-    <p>{{ form.sy }}{{ form.sy.label }}</p>
-    <p>{{ form.restart() }}</p>
+        {#        {% for hap_server in form.server_bools %}#}
+        {#            <p>#}
+        {#                {{ hap_server }}#}
+        {#                {{ hap_server.label }}#}
+        {#            </p>#}
+        {#        {% endfor %}#}
+        <p>{{ form.sy }}{{ form.sy.label }}
+            {{ form.mgr }}{{ form.mgr.label }}
+            {{ form.passport }}{{ form.passport.label }}
+            {{ form.portal }}{{ form.portal.label }}
+        </p>
+        <p>
+            {{ form.eam }}{{ form.eam.label }}
+            {{ form.trn }}{{ form.trn.label }}
+            {{ form.hse }}{{ form.hse.label }}
+            {{ form.csc }}{{ form.csc.label }}
+            {{ form.phd }}{{ form.phd.label }}
+            {{ form.pom }}{{ form.pom.label }}
+        </p>
+        <p>
+            {{ form.eam_m}}{{ form.eam_m.label }}
+            {{ form.trn_m }}{{ form.trn_m.label }}
+            {{ form.hse_m }}{{ form.hse_m.label }}
+            {{ form.csc_m }}{{ form.csc_m.label }}
+            {{ form.phd_m }}{{ form.phd_m.label }}
+            {{ form.pom_m }}{{ form.pom_m.label }}
+        </p>
+        <p>{{ form.restart() }}</p>
     </form>
 {% endblock %}
