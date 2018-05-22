@@ -7,4 +7,4 @@ class Restart(FlaskForm):
 
     for i in server_names:
         locals()[i]=BooleanField(i)
-        restart=SubmitField('重启')
+        restart=SubmitField('restart')

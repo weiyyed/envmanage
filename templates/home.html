@@ -1,14 +1,10 @@
 {% extends "base.html" %}
 {% block content %}
-    <hr>
-    <form>
-        {#        {% for hap_server in form.server_bools %}#}
-        {#            <p>#}
-        {#                {{ hap_server }}#}
-        {#                {{ hap_server.label }}#}
-        {#            </p>#}
-        {#        {% endfor %}#}
-        <p>{{ form.sy }}{{ form.sy.label }}
+    <h1>test-linux</h1>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.sy }}{{ form.sy.label }}
             {{ form.mgr }}{{ form.mgr.label }}
             {{ form.passport }}{{ form.passport.label }}
             {{ form.portal }}{{ form.portal.label }}
@@ -22,7 +18,7 @@
             {{ form.pom }}{{ form.pom.label }}
         </p>
         <p>
-            {{ form.eam_m}}{{ form.eam_m.label }}
+            {{ form.eam_m }}{{ form.eam_m.label }}
             {{ form.trn_m }}{{ form.trn_m.label }}
             {{ form.hse_m }}{{ form.hse_m.label }}
             {{ form.csc_m }}{{ form.csc_m.label }}

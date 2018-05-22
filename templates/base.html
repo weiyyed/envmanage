@@ -5,7 +5,23 @@
     <title>测试环境管理</title>
 </head>
 <body>
-<h1>test-linux </h1>
-{%block content %}{% endblock %}
+{#<h1>test-linux </h1>#}
+<div>
+环境：
+<a href="/test_linux">产品test-linux</a>
+<a href="/qzh">泉州预发布</a>
+</div>
+<hr>
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+
+{% block content %}{% endblock %}
 </body>
 </html>
